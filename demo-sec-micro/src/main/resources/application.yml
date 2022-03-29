@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: micro
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+  mvc:
+    log-request-details: true
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org.springframework.security: DEBUG
